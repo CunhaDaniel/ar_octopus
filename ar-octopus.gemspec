@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.2.0'
 
-  s.add_dependency 'activerecord', "~> 6.0.6.1"
-  s.add_dependency 'activesupport', "~> 6.0.6.1"
+  s.add_dependency 'activerecord', "~> 6.1"
+  s.add_dependency 'activesupport', "~> 6.1"
 
   s.add_development_dependency 'appraisal', '>= 0.3.8'
   # To install the mysql2 gem its necessary execute the following command before run bundle
