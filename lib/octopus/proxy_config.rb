@@ -221,7 +221,7 @@ module Octopus
         spec = ActiveRecord::ConnectionAdapters::ConnectionSpecification.new(config.dup, adapter)
       else
         name = adapter['octopus_shard']
-        spec = ActiveRecord::ConnectionAdapters::ConnectionSpecification.new(name, config.dup, adapter)
+        spec = ActiveRecord::ConnectionAdapters::AbstractAdapter::ConnectionSpecification.new(name, config.dup, adapter)
       end
 
       ActiveRecord::ConnectionAdapters::ConnectionPool.new(spec)
